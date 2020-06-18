@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>this is login page</title>
+</head>
+<body>
+    {{ret}}
+    <form action="{{url_for('signup')}}" method="POST">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" placeholder="Enter a username" required=""></td>
+            </tr>
+
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" placeholder="Enter a username" required=""></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="emal" placeholder="Enter a email_id" required=""></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password_0" placeholder="Enetr a password" required=""></td>
+            </tr>
+
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="password_1" placeholder="Enetr a password" required=""></td>
+            </tr>
+
+            <tr>
+                <td>Phone No</td>
+                <td><input type="text" name="phone_no" placeholder="Enetr a phone no not required"></td>
+            </tr>
+
+            <tr>
+                <td>Signup:</td>
+                <td><button>Submit</button></td>
+            </tr>
+        </table>
+    </form>
+    <p>If u have account:</p>
+    <p><a href="{{url_for('index')}}">Login</a></p>
+</body>
+</html>

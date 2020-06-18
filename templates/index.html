@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>this is login page</title>
+</head>
+<body>
+    {{ret}}
+    <form action="{{url_for('login')}}" method="POST">
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" placeholder="Enter a username" required=""></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" placeholder="Enetr a password" required=""></td>
+            </tr>
+
+            <tr>
+                <td>Login:</td>
+                <td><button>Submit</button></td>
+            </tr>
+        </table>
+    </form>
+    <p>If u do not have account:</p>
+    <p><a href="{{url_for('account')}}">Signup</a></p>
+</body>
+</html>
